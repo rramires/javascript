@@ -5,7 +5,7 @@ procedimento(valor1, valor2, valor3){
     // executa alguma coisa
     // retorna ou não
 }
-procedimento(1,2,3)
+procedimento(1,2,3) 
 
 
 // OO - Objetos, com valores(propriedades) e procedimentos(funcoes, métodos)
@@ -60,6 +60,19 @@ tipo: Uno, Marca: Fiat, Cor: Vermelho, TetoSolar: sim/não etc...
 /*
 A partir de um modelo mais genérico, pode-se alterar suas caracteristicas
 Carro, pode ser um Uno, uma Ferrari, Honda... 
+
+Ex: em linguagens tipadas
+var carro:Carro;
+var esportivo:Ferrari
+var popular:Uno
+
+// vc recebe o filho
+carro = esportivo
+outra hora
+carro = popular
+
+// e expõe menos características para determinado local do código
+carro.acelerar()
 */
 
 
