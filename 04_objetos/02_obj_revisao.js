@@ -2,7 +2,8 @@
 const produto = new Object // = produto = {}
 // chave =(recebe) valor
 produto.nome = 'Cadeira'
-// também pode ser dessa maneira - é possivel produto['marca do produto'] mas não recomendado
+// também pode ser dessa maneira - 
+// é possivel usar espaços produto['marca do produto'] mas não recomendado de jeito nenhum!!!
 produto['marca'] = 'Hermann Miller'
 // usado geralmente para passar valor dinânico, ex:
 let prop = 'preco'

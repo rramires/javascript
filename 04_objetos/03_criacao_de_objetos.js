@@ -65,4 +65,4 @@ const fromJSON = JSON.parse('{"info": "Vim do JSON!!!"}')
 
 console.log(fromJSON)
 // pegando a propriedade
-console.log(fromJSON.info)
+console.log(fromJSON.info) 

@@ -10,7 +10,7 @@ pessoa.nome = 'Batata'
 pessoa.telefone = 999998888
 
 console.log(pessoa.nome)
-console.log(pessoa.telefone)
+console.log(pessoa.telefone) 
 
 // da erro, pois que não pode ser trocado 
 // é o valor que no caso era o 1º objeto
@@ -30,9 +30,15 @@ pessoa.nome = 'João'
 // não consegue criar propriedade
 pessoa.end = 'Rua Bago de Uva, 123'
 
-// nem deletar
+// nem deletar, nem propriedade nem o objeto em si
 delete pessoa.nome
 delete pessoa
 
 console.log(pessoa)
+
+// Se quiser criar um objeto que não será alterado 
+const objNaoMudaNada = Object.freeze({nome: 'João', telefone: 99889945})
+
+
+
 
