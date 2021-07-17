@@ -21,3 +21,4 @@ p1.falar()
 // *** importante testar no console do browser
 //document.getElementsByTagName('body')[0].onclick = p1.falar
 // OK - Imprime: Eu sou: Ricardo! pois arrow function nao muda o escopo do this
+
