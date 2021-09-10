@@ -18,6 +18,7 @@ console.log(moduloB) // é uma funcao
 console.log(moduloB.visivel1) // undefined
 console.log(moduloB.naoVisivel) // undefined
 console.log(moduloB.naoVisivel2) // undefined
+//
 
 
 
