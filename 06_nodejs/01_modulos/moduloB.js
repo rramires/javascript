@@ -11,5 +11,5 @@ module.exports = {
     }
 }
 // o module.exports sobrescreve não adianta criar depois
-this.visivel2 = 'Visivel 2'
+this.naoVisivel3 = 'Não Visível3'
 

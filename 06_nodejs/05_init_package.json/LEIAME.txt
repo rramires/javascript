@@ -1,0 +1,107 @@
+1 - Iniciando um projeto, acesse a pasta via terminal
+cd 05_init_package.json 
+por exemplo
+
+
+2 - Dentro da pasta inicialize
+npm init
+
+
+3 - Vai sair uma mensagem e por ultimo vai estar perguntando o nome do projeto
+    No nosso caso vamos deixar "05_init_package.json" mesmo. 
+
+"This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (05_package.json)"
+
+enter ou outro nome desejado
+
+
+4 - Adicione a versão ou de enter
+enter
+
+5 - Adicione a descrição
+Teste do comando npm init, para criar o package.json
+
+6 - Defina o endpoint. Normalmente index.js mesmo
+enter
+
+7 - Comando de Teste
+defina ou de enter
+
+8 - Repositório no git
+defina ou de enter
+
+9 - keywords
+enter ou as tags: teste nodejs javascrip
+
+10 - Autor
+enter ou seu nick
+
+11 - Licença, ex MIT
+enter ou a sigla da licenca
+
+12 - Confira e salve, ex:
+{
+  "name": "05_init_package.json",
+  "version": "1.0.0",
+  "description": "Teste do comando npm init, para criar o package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teste",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "rramires",
+  "license": "MIT"
+}
+
+13 - De Y para salvar
+Y
+
+14 - Abra o arquivo package.json e analize-o
+
+--------------
+
+15 - Vamos agora instalar uma dependencia e fazer com que ela seja salva no package.json (--save)
+No terminal, dentro da pasta do projeto, vamos instalar o "axios"
+npm i --save axios
+
+16 - Abra package.json e veja que adicionou
+"dependencies": {
+    "axios": "^0.21.4"
+}
+// ^ significa essa versão ou maior no segundo conjunto (21), nesse exemplo acima
+// ~ significa essa versão ou maior no terceiro conjunto (4), nesse exemplo acima
+// SEM NADA, ex "axios": "0.21.4", apenas essa versão
+
+17 - Se precisar instalar uma dependencia apenas de desenvolvimento
+npm i --save-dev dependencia 
+// e se quiser já especificar que é uma versao fixa -E 
+npm i --save-dev axios@0.21.4 -E 
+// Nesse caso é criado no package.json devDependencies
+"devDependencies": {
+    "axios": "0.21.4"
+}
+// se vc deu o comando, volte ao normal para continuar-mos
+"dependencies": {
+    "axios": "^0.21.4"
+}
+
+18 - Vamos criar um pequeno exemplo pegando dados do backend, no projeto 05_init_package.json crie um novo arquivo js
+funcionarios.js
+// o resto estará descrito nos comentários dentro dele 19, 20...
+// Abra essa URL no browser, vamos utilizar (obs: é um json estático)
+https://flexbr.com/funcionarios.json 
+
