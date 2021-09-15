@@ -1,0 +1,58 @@
+1 - Inicialize o projeto na pasta dele
+npm init -y
+
+2 - Instale o express
+npm i --save express
+
+2 - Crie uma pasta scr
+mkdir scr
+
+3 - Crie um arquivo par o servidor
+server.js
+
+4 - No package.json defina
+"main": "src/server.js"
+E em scripts
+"start": "nodemon"
+
+5 - Segue o código da criação do servidor
+
+// define a porta
+const porta = 3000
+// importando o express
+const express = require('express')
+// criando uma instancia
+const app = express()
+// startando o servidor
+app.listen(porta, () => {
+    console.log(`Servidor ativo, ouvindo a porta: ${porta}`)
+})
+
+// Middleware
+app.get('/produtos', (req, res, next) => {
+    /* 
+    Ex: eu precisasse consultar algo antes
+    */
+    console.log('Middleware... Executou aqui antes!')
+    // Faz chamar a proxima
+    next();
+}) 
+
+// consulta
+app.get('/produtos', (req, res) => {
+    //
+    console.log('Depois executou aqui!')
+    // retorna 
+    res.send([{ nome: 'Notebook', preco: 3480.85}, { nome: 'Mouse', preco: 129.50}])
+}) 
+
+6 - No terminal, execute
+npm start
+Agora toda vez que salvar ele re-executa
+
+7 - No navegador va em 
+http://localhost:3000/produtos
+
+8 - De uma olhada também em testes.js dentro de src
+    Tem mais exemplos
+
