@@ -1,0 +1,21 @@
+{
+  "name": "05_init_package.json",
+  "version": "1.0.0",
+  "description": "Teste do comando npm init, para criar o package.json",
+  "main": "funcionarios.js",
+  "scripts": {
+    "start": "nodemon",
+    "rodeAgora": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teste",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "rramires",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}

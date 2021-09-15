@@ -1,0 +1,44 @@
+1 - Copie de 05_init_package.json
+funcionarios.js 
+package.json
+
+2 - Entre nessa pasta via terminal
+cd 
+
+3 - Instale as dependencias
+npm i
+
+4 - Rode para ver se deu tudo certo
+nodemon funcionarios.js
+
+5 - Altere algum parametro de um dos filtros e salve. 
+    Peceba que o nodemon recarrega a aplicacao
+const mulheres = filtro => filtro.genero === 'F' para 'M'
+
+6 - Cancele 
+ctrl+c
+
+7 - Agora vamos automatizar algumas coisas.
+Por padrão chama o index.js mas podemos mudar, se quiser. Ex
+"main": "funcionarios.js"
+
+Agora podemos execuar digitando apenas
+nodemon
+
+*** o mesmo era possível se fosse usado um arquivo index.js por padrão
+
+8 - Vamos criar comandos para iniciar e parar a aplicação. em "scripts", adicione
+"start": "nodemon",
+
+Agora basta digitar
+npm start
+
+9 - Se quisermos outros comandos, ex adicione
+"rodeAgora": "nodemon",
+
+Tem que usar run
+npm run rodeAgora
+
+
+
+
