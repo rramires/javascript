@@ -1,0 +1,2 @@
+1 - Instale o node-schedule
+npm i node-schedule
