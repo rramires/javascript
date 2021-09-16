@@ -1,0 +1,16 @@
+1 - Ver dentro de src db_fake.js que é a simulação de um banco
+
+2 - Ver index.js também dentro de src, que contem vários méotodos.
+
+3 - Caso seja primeira vez, instalar as dependencias
+npm i
+Ou para fazer um projeto do zero, crie o package.json
+npm init -y
+Instale o express
+npm i --save express
+
+3 - Para rodar, usar
+npm start
+
+4 - Testar, usando o Postman. Segue link:
+https://www.postman.com/rramires/workspace/rramires/request/6767252-2b9f31f6-508b-4f93-80c6-44ab7917a029
