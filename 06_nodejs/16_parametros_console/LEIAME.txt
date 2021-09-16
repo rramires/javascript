@@ -1,0 +1,8 @@
+1 - Executar sem parâmetro
+node i_o_console.js 
+// Pede o seu nome, imprime no console e encerra
+
+2 - Executar com -a como parâmetro
+node i_o_console.js -a
+// Imprime no console e encerra
+Fala Anônimo!
