@@ -1,6 +1,5 @@
 /**
  * Exemplo bem mais elegante, usando promises
- * callback's aninhadas para pegar 3 resultados em sequencia
  */
 
 const https = require('https')
@@ -52,7 +51,7 @@ Promise.all( [getTurma('A'), getTurma('B'), getTurma('C')] )
     .then(turmas => [].concat(...turmas)) // então concatenamos os 3 num array só
     //.then(turmas => console.log(turmas))
     // 2 - do resultado, filtramos para pegar só o nome
-    .then(alunos => alunos.map(aluno => aluno.nome))
+    .then(alunos => alunos.map(a => a.nome))
     // 3 - imprimimos o resultado
     .then(nomes => console.log(nomes)) 
     // 4 - caso de erro, executa
