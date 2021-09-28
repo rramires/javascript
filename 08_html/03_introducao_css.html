@@ -1,0 +1,56 @@
+<html>
+    
+    <head>
+    
+        <title>Introdução CSS</title>
+
+        <!-- 1 - CSS Interno -->
+        <style>
+            /* aplicando numa tag - afeta todas */
+            
+            /* h1 {
+                font-size: 20px;
+            } */
+            
+
+            /* criando classes - vantagem de serem reaproveitadas */
+            
+            /* .fundoVM{
+                background-color: red;
+                padding: 5px;
+            } */
+            /* .negrito{
+                font-size: 22px;
+                font-weight: bold;
+            } */
+           
+
+            /* aplicando num ID - elemento específico */
+            
+            /* #texto1{
+                font-size: 48px;
+                font-weight: bold;
+            } */
+            
+        </style>
+
+        <!-- 2 - CSS Externo -->
+        <link rel="stylesheet" type="text/css" href="03_introducao_css.css" /> 
+
+    </head>
+
+    <body>
+        <!-- é possivel aplicar estilo a tags -->
+        <h1>CSS</h1>
+        
+        <!-- ou referenciando uma tag pelo ID - cuidado para não duplicar IDs na mesma página -->
+        <span id="texto1">Texto 1</span>
+
+        <!-- aplicar uma classe -->
+        <span class="fundoVM">Texto 2</span>
+        
+        <!-- aplicar mais de uma classe -->
+        <span class="fundoVM negrito">Texto 3</span>
+    </body>
+
+</html>

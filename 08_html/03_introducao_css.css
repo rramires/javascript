@@ -1,0 +1,20 @@
+/* aplicando numa tag - afeta todas */
+h1 {
+    font-size: 20px;
+}
+
+/* criando classes - vantagem de serem reaproveitadas */
+.fundoVM{
+    background-color: red;
+    padding: 5px;
+}
+.negrito{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* aplicando num ID - elemento específico */
+#texto1{
+    font-size: 48px;
+    font-weight: bold;
+}
