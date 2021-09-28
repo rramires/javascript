@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos HTML</title>
+</head>
+<body>
+    <header>Exercícios HTML</header>
+
+    <!-- 1 - Quando clicar nos links -->
+    <nav>
+        <a href="samples/00_teste.html">00 - Teste</a>
+    </nav>
+
+    <!-- 2 - o conteúdo dos exemplos será carregado dentro dessa section, via javascript -->
+    <section id="content" />
+
+    <footer>Treinando HTML</footer>
+
+    <!-- Boa prática - manter JS no final do body -->
+
+    <!-- script para carregar o conteudo dos links na section content -->
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+           link.onclick = function(e){
+                // previne o comportamento padrão que é redirecionar
+                e.preventDefault()
+                // pegando a section pelo ID
+                const cont = document.getElementById('content')
+                // pega o conteudo da pagina de destino do link
+                fetch(link.href)
+                    // converte o conteudo em texto html
+                    .then(resp => resp.text())
+                    // joga na section de conteudo
+                    .then(html => cont.innerHTML = html)
+            }
+        })        
+</script>
+</body>
+</html>
