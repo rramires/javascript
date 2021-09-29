@@ -1,0 +1,3 @@
+Os demais exercícios estão na pasta samples
+Abrir via servidor http(goLive) a index.html 
+Ao clicar nos links os conteúdos dos htmls serão carregados na index
