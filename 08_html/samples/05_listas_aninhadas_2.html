@@ -1,0 +1,65 @@
+<h1>Listas Aninhadas 2 - Expansível via JS</h1>
+<h4>Obs: Abrir a página separada do index</h4>
+<!-- 
+    ol - Listas Aninhadas
+-->
+<h4>Pasta do Projeto</h3>
+<!-- classe css linkada no final da página -->
+<ul class="tree">
+    <li>
+        <span js-folder>backend</span>
+        <ul>
+            <li>
+                <span js-folder>app</span>
+                <ul>
+                    <li>produtos.js</li>
+                    <li>usuarios.js</li>
+                    <li>vendas.js</li>
+                </ul>
+            </li>
+            <ul>
+                <span js-folder>config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidores.js</li>
+                </ul>
+            </ul>
+        </ul>
+    </li>
+    <li>
+        <span js-folder>frontend</span>
+        <ul>
+            <li>
+                <span js-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- CSS - somente para demonstracao do que é possivel -->
+<link rel="stylesheet" href="listas_tree.css">
+
+<!-- Script do desafio - Não roda a partir do index que é carragado via innerHTML -->
+<script>
+    document.querySelectorAll('[js-folder]').forEach(folder => {
+        folder.onclick = function(e){
+
+            //debugger // abre o depurador na linha - mto útil
+            //console.log('Folder: ' + e.target.outerText) // mostra o texto entre o span
+
+            // pega o próximo elemento, no caso a ul
+            const ul = folder.nextElementSibling
+            // pega o valor do css display
+            const d = ul.style.display
+            // inverte os valores entre block ou none
+            ul.style.display = d === 'none' ? 'block' : 'none'            
+        }
+    })
+</script>
+
